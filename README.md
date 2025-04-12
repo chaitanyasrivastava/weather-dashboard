@@ -1,63 +1,37 @@
-🌦️ Real-Time Weather Dashboard
-A full-stack weather dashboard that allows users to search for any city and instantly view live weather data — built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
+# 🌦️ Real-Time Weather Dashboard
 
-🚀 Features
-🌐 Real-time weather updates using OpenWeather API
+A full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that allows users to get real-time weather information for any city using the OpenWeatherMap API.
 
-🔍 Search any city for live temperature, humidity, wind speed, and condition
+---
 
-💾 Stores recent searches using MongoDB
+## 🚀 Features
 
-🎨 Responsive and clean UI with React
+- 🔍 Search weather by city name
+- 🌐 Real-time weather data (temperature, humidity, wind speed, etc.)
+- 🧠 Stores previous search history (MongoDB)
+- ⚙️ Backend API built with Express and Node.js
+- 💻 Frontend using React
+- 📡 Fetches weather data using OpenWeatherMap API
 
-🔧 RESTful API backend with Express and Node.js
+---
 
-📦 Project Structure
-bash
-Copy
-Edit
-weather-dashboard/
-│
-├── client/         # React frontend
-├── server/         # Node.js + Express backend
-├── .gitignore
-├── README.md
-└── package.json
-🛠️ Setup Instructions
-✅ Prerequisites
-Node.js & npm installed
+## 📁 Project Structure
 
-MongoDB running locally or cloud (e.g. MongoDB Atlas)
 
-API key from OpenWeather
+---
 
-⚙️ Backend Setup
-bash
-Copy
-Edit
+## 🛠️ Setup Instructions
+
+### ✅ Prerequisites
+
+- Node.js & npm
+- MongoDB (local or Atlas)
+- OpenWeatherMap API Key
+
+---
+
+### 🔧 Backend Setup
+
+```bash
 cd server
 npm install
-Create a .env file in server/ with the following:
-
-env
-Copy
-Edit
-PORT=5000
-MONGO_URI=your_mongo_db_connection_string
-WEATHER_API_KEY=your_openweather_api_key
-Start the backend:
-
-bash
-Copy
-Edit
-node server.js
-💻 Frontend Setup
-bash
-Copy
-Edit
-cd client
-npm install
-npm start
-Your React app should now run on http://localhost:3000
-The backend runs on http://localhost:5000
-
